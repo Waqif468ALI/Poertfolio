@@ -1,0 +1,14 @@
+.rotate-animation {
+    border-radius: 100%;
+    animation: rotate 5s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
