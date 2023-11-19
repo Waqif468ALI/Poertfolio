@@ -1,0 +1,38 @@
+input{
+    width:100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+textarea{
+    width:100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+   
+}
+.contactTitle{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2%;
+  border-radius: 5px;
+}
+.Contact_div{
+    text-align: justify;
+    font-family: sans-serif;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* .contact_information{
+    border: 1px solid #ccc; 
+    font-family: fantasy;
+}
+.font{
+    font-size: 3rem;
+    color:rgb(127, 238, 255);
+} */

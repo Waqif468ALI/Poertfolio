@@ -5,12 +5,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: sans-serif;
+  /* background-color: white; */
+  /* background-color: #FFFFFF; */
+  background-color: #fff;
 }
 
 .section {
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -21,4 +23,11 @@ body {
 .img{   
   width: 18%;
 }
-
+.nav{
+  padding: 1%;
+  /* background-color: aquamarine; */
+}
+.button{
+  margin-left: 0.4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
