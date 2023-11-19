@@ -7,6 +7,8 @@ import Projects from './Project';
 import Skills from './skill';
 import Profile from './Profile';
 import Services from './Services';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle,faGears,faComputer,faBoxesAlt,faLanguage,faContactCard } from '@fortawesome/free-solid-svg-icons';
 
 
 const Main = () => {
@@ -21,39 +23,44 @@ const Main = () => {
   <>
 <header>
 <section className="section  py-3" id="header">
-    <div className="container">
-        <div className="row justify-content-center">
-            <div className="col-md-2 text-center">
+    <div className='nav'>
+    <div className="container ">
+        <div className="row justify-content-center ">
+            <div className="col-md-8 text-center">
                 <button 
-                className="btn btn-light w-100"
+                className="btn button "
                  onClick={() => scrollToSection('section1')}>
+                    <FontAwesomeIcon  icon={faInfoCircle} />
                     About
                 </button>
-            </div>
-            <div className="col-md-2 text-center">
                 <button 
-                className="btn btn-light w-100"
+                className="btn  button"
                 onClick={() => scrollToSection('section2')}
-                >Skills</button>
-            </div>
-            <div className="col-md-2 text-center">
+                >
+                      <FontAwesomeIcon  icon={faGears} />
+                    Skills
+                </button>
                 <button 
-                className="btn btn-light w-100"
+                className="btn  button"
                 onClick={() => scrollToSection('section3')}
                 >
+                      <FontAwesomeIcon  icon={faComputer} />
                  Projects
                 </button>
-            </div>
-            <div className="col-md-2 text-center">
-                <button className="btn btn-light w-100">Experince</button>
-            </div>
-            <div className="col-md-2 text-center">
-                <button className="btn btn-light w-100">Services</button>
-            </div>
-            <div className="col-md-2 text-center">
-                <button className="btn btn-light w-100"  onClick={() => scrollToSection('section5')}>Contact</button>
-            </div>
+                <button className="btn  button">
+                <FontAwesomeIcon  icon={faBoxesAlt} />
+                    Experince
+                    </button>
+                <button className="btn button" onClick={() => scrollToSection('section4')}>
+                <FontAwesomeIcon  icon={faLanguage} />
+                    Services
+                    </button>
+                <button className="btn  button"  onClick={() => scrollToSection('section5')}>
+                <FontAwesomeIcon  icon={faContactCard} />
+                    Contact</button>
+                </div>
         </div>
+    </div>
     </div>
 </section>
 
@@ -79,9 +86,7 @@ const Main = () => {
         <Services></Services>
     </section>
     <hr></hr>
-  
-  <hr></hr>
-  <section className="section" id="section5">
+   <section className="section" id="section5">
         <Contact></Contact>
     </section>
     <section className="section bg-dark text-light" id="section4">

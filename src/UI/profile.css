@@ -1,14 +1,18 @@
 .rotate-animation {
-    border-radius: 100%;
-    animation: rotate 5s linear infinite; /* Adjust the duration as needed */
+    border-radius: 10%;
+  }
+  .Name{
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-family: 'Ultra','fantasy', sans-serif;   
+    /* font-size: 36px; */
+    /* line-height: 42px; */
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;
   }
   
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+   
+  
+
   

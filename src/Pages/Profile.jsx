@@ -1,6 +1,7 @@
 import React  from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 import '../UI/profile.css'
-import image from '../asstes/W.jpg'
+import image from '../asstes/image.jpeg'
 
 
 const Profile =() =>{
@@ -9,16 +10,22 @@ const Profile =() =>{
     return(
         <>
          <div className="container">
-            <div className="profile">
-                {/* <img src={require('../asstes/child.jpg').default}></img> */}
+            <div className="row">
+               <div className="col-md-8">
+                  <h4 className="Name">waqif Ali</h4>
+                  <h6 className="Name">Software Engineer</h6>
+              </div>
+              <div className="profile col-md-4">
                 <img
-                 src={image} // Use the imported image
+                 src={image} 
                  alt="waqif Ali"
                  width="20%"
                  className=" rotate-animation"
-                
-                />
+    
+               />
+         </div>
             </div>
+            
         </div>
      </>
     )
