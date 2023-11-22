@@ -9,6 +9,7 @@ import Profile from './Profile';
 import Services from './Services';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle,faGears,faComputer,faBoxesAlt,faLanguage,faContactCard } from '@fortawesome/free-solid-svg-icons';
+import Experince from './Experience';
 
 
 const Main = () => {
@@ -47,7 +48,7 @@ const Main = () => {
                       <FontAwesomeIcon  icon={faComputer} />
                  Projects
                 </button>
-                <button className="btn  button">
+                <button className="btn  button" onClick={() => scrollToSection('sectionE')}>
                 <FontAwesomeIcon  icon={faBoxesAlt} />
                     Experince
                     </button>
@@ -80,6 +81,10 @@ const Main = () => {
   <hr></hr>
     <section className="section " id="section3">
        <Projects></Projects>
+    </section>
+    <hr></hr>
+    <section className="section " id="sectionE">
+       <Experince></Experince>
     </section>
     <hr></hr>
     <section className="section" id="section4">

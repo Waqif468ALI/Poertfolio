@@ -1,39 +1,52 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faContactCard,faUserFriends,faMailBulk,faMessage} from '@fortawesome/free-solid-svg-icons';
+import { faContactCard,faUserFriends,faMailBulk,faMessage,faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 import '../UI/contact.css'
-import React, { useState } from 'react';
+import React, { useRef ,useState,useEffect} from 'react';
+import emailjs from "@emailjs/browser"
 
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
+    const form = useRef();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_94opp7d', 'template_r3jkahx', form.current, 'pDnKeMk3v3-MttCTb')
+        .then((result) => {
+            if(result){
+                debugger
+                setIsModalOpen(true);
+                console.log("ismodal",isModalOpen)
+            }
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
         });
     };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData);
-    };
-
+    
+    useEffect(() => {
+        let timer;
+        if (isModalOpen) {
+            timer = setTimeout(() => {
+                setIsModalOpen(false);
+            }, 5000); // 5 seconds delay
+        }
+        return () => clearTimeout(timer); // Clear the timer on component unmount
+    }, [isModalOpen]);
     return (
         <div className="container ">
             <div className='col-md-2 justify-content-center'>
             <h3 className='contactTitle'>
               <FontAwesomeIcon  icon={faContactCard} />
                 Contact 
-                </h3>
-                </div>   
+            </h3>
+             </div>   
             <div className='row'>
             <div className='col-md-6 Contact_div'>
-            <form onSubmit={handleSubmit}>
+            {isModalOpen &&( <div className='messageModal'>
+                        <p>messsage sent</p>
+                    </div>)}
+            <form ref={form} onSubmit={sendEmail}>
                <div className="mb-3 ">
                     <label htmlFor="name" className="text-left">
                         
@@ -42,11 +55,8 @@ function Contact() {
                         </label>
                     <input
                         type="text"
-                        className=""
                         id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+                        name="user_name"
                         required
                     />
                  </div>
@@ -59,9 +69,7 @@ function Contact() {
                         type="email"
                         className=""
                         id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        name="user_email"
                         required
                     />
                  </div>
@@ -74,12 +82,13 @@ function Contact() {
                         className=""
                         id="message"
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
                         required
                     />
                  </div>
-                 <button type="submit" className="btn btn-primary">Send</button>
+                 <button type="submit" className="btn btn-dark">
+                 <FontAwesomeIcon  icon={faPaperPlane} />
+                 </button>
+                   
             </form>
             </div>
             {/* <div className='col-md-4 contact_information'>
@@ -89,6 +98,7 @@ function Contact() {
                    </div>
             </div> */}
             </div>
+            
         </div>
     );
 }
