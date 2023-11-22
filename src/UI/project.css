@@ -3,6 +3,7 @@
     margin: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    height: 22rem;
   }
 
 .project_image{
@@ -13,3 +14,25 @@
     padding: 2%;
   border-radius: 5px;
 }
+.descriptionTitle{
+	font-variant: petite-caps
+}
+.description{
+	width: fit-content;
+    padding: 5px;
+    margin-bottom: 1em;
+        font-size: smaller;
+        /* JUSTIFY-CONTENT: unset; */
+        font-variant: petite-caps;
+}
+a {
+	color: rgb(8, 231, 228)(0, 255, 251);
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+  .Empty{
+    background-color: #f4f1f1;
+  }
+  .Coming{
+    color: #ccc;
+  }
