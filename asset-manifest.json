@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/PORTFOLIO/static/css/main.20dab3f2.css",
+    "main.js": "/PORTFOLIO/static/js/main.326dcd3a.js",
+    "static/js/787.ce689f02.chunk.js": "/PORTFOLIO/static/js/787.ce689f02.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/PORTFOLIO/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Breeze1.jpg": "/PORTFOLIO/static/media/Breeze1.b5334fa9e55d013496c8.jpg",
+    "static/media/fontawesome-webfont.eot": "/PORTFOLIO/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/PORTFOLIO/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Breeze2.jpg": "/PORTFOLIO/static/media/Breeze2.253b65465c731519e90f.jpg",
+    "static/media/Breez3.jpg": "/PORTFOLIO/static/media/Breez3.2b1e2e233c52c264b98c.jpg",
+    "static/media/Team.jpeg": "/PORTFOLIO/static/media/Team.8251e66fe7cfaaffd7bb.jpeg",
+    "static/media/image.jpeg": "/PORTFOLIO/static/media/image.46d4522db8c361681147.jpeg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/PORTFOLIO/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/reactjs2.jpg": "/PORTFOLIO/static/media/reactjs2.82410bd178ba160757a2.jpg",
+    "static/media/ts.webp": "/PORTFOLIO/static/media/ts.2891f4672d9a0339ec7f.webp",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/PORTFOLIO/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/angular.avif": "/PORTFOLIO/static/media/angular.d3002b4b2f3089f61bcd.avif",
+    "static/media/javascript.jpg": "/PORTFOLIO/static/media/javascript.fc0b724a7ea77e349d34.jpg",
+    "static/media/Csharp2.webp": "/PORTFOLIO/static/media/Csharp2.60a05c9312a02706fb4f.webp",
+    "static/media/SQLserver.webp": "/PORTFOLIO/static/media/SQLserver.fbededed9f98eeb2f7b7.webp",
+    "index.html": "/PORTFOLIO/index.html",
+    "main.20dab3f2.css.map": "/PORTFOLIO/static/css/main.20dab3f2.css.map",
+    "main.326dcd3a.js.map": "/PORTFOLIO/static/js/main.326dcd3a.js.map",
+    "787.ce689f02.chunk.js.map": "/PORTFOLIO/static/js/787.ce689f02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20dab3f2.css",
+    "static/js/main.326dcd3a.js"
+  ]
+}
